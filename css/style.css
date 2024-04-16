@@ -108,7 +108,8 @@ header .nav-item .nav-link:hover {
   background-image: url(../image/3.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  height: 60vh;
+  
+  height: fit-content;
   padding: 100px 0;
   position: relative;
 }
