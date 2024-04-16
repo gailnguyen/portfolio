@@ -1,0 +1,182 @@
+header .nav-link {
+  position: relative;
+  margin: 0 15px;
+  color: white;
+}
+
+header .nav-item .nav-link.active {
+  color: #35a22c !important;
+}
+
+header .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #35a22c;
+}
+
+header .nav-link:hover::before {
+  color: #35a22c;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+header .active::before {
+  width: 100%;
+}
+
+header .nav-item .nav-link:hover {
+  color: #35a22c !important;
+}
+
+/* carousel */
+.carousel .carousel-caption img {
+  width: 150px;
+}
+
+.carousel .carousel-caption {
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform nhận giá trị âm cho 2 chiều giúp đẩy ngược phần tử lại, từ đó canh giữa phần tử */
+  /* transform: translate(-50%,-50%); */
+  /* right: unset; */
+  /* bottom: unset; */
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.334);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* project */
+.project {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.project_catalogue ul {
+  justify-content: center;
+}
+
+.project_catalogue .nav-pills .nav-link.active {
+  background-color: #35a22c;
+  color: #fff;
+  border-color: #35a22c;
+}
+
+.project_catalogue .nav-pills .nav-link {
+  margin: 5px;
+  border: 1px solid black;
+  color: black;
+}
+
+.col-4 .project_item {
+  border-radius: 20px;
+  /* background-color: pink; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.col-4 img {
+  border-radius: 20px 20px 0 0;
+}
+
+.project .project_item:hover h3 {
+  color: #37a32e;
+}
+
+.project .project_text {
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+}
+
+.project .project_item:hover .project_text {
+  border-color: #37a32e;
+}
+
+/* available */
+.available {
+  background-image: url(../image/3.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 60vh;
+  padding: 100px 0;
+  position: relative;
+}
+
+/* .available_bg{
+    background-color: rgba(0, 0, 0, 0.183);
+    height: 100%;
+} */
+
+.available::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(7, 10, 12, 0.72);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.available .available_content .available_item {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+
+
+
+
+/* lưu ý đặc biệt khi sử dụng max-width cho responsice website là luôn để các giá trị max-width lớn hơn nằm trên giá trị nhỏ hơn */
+
+/* @media screen and (max-width: 1200px) {
+    .carousel h5 {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project_item {
+        background-color: orange;
+    }
+
+    .carousel h5 {
+      color: orange;
+    }
+} */
+
+
+
+/* lưu ý khi sử du4n5ng min-width là phải set từ vùng nhỏ sau đó mới tới vùng lớn */
+
+/* @media screen and (min-width: 576px) {
+  .carousel h5{
+    color: red;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .carousel h5{
+    color: purple;
+  }
+} */
+
+
+
